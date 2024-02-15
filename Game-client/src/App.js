@@ -11,7 +11,7 @@ import About from './components/About';
 import Faq from './components/Faq';
 import Contact from './components/Contact';
 import DisplayProfile from './components/DisplayProfile';
-import { UserProvider } from './contexts/UserProvider';
+import { UserProvider } from './contexts/userProvider';
 import { Container } from 'react-bootstrap';
 import './styles/global.css';
 

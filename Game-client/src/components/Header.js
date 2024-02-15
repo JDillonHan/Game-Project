@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ReactComponent as GameLogo } from '../images/gameLogo.svg';
+import { ReactComponent as GameLogo } from '../images/game.svg';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import '../styles/Header.css';
 import UserContext from '../contexts/userContext';
@@ -11,7 +11,7 @@ const Header = () => {
     const [verify, setVerify] = useState(null);
     let { userId } = useParams();
 
-    cont [userId, setUser] = useState({
+    const [user, setUser] = useState({
         firstName: '',
     });
 
@@ -71,9 +71,9 @@ const Header = () => {
     } else {
         return (     
             <Nav collapseOnSelect expand="sm" className='custom-navbar'>
-                <Narbar.Brand href="/">
+                <Navbar.Brand href="/">
                     <GameLogo alt="" width="120" height="30" className="d-inline-block align-top" style={{ marginright: "20px" }} />
-                </Narbar.Brand>
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id='responsive-navbar-nav'>
                     <Nav className='mr-auto'>

@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from "react";
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import UserContext from '../contexts/UserContext';
+import UserContext from '../contexts/userContext';
 
 const SignIn = () => { 
     const [verify, setVerify] = useState(null);
@@ -9,7 +9,7 @@ const SignIn = () => {
     const [password, setPassword] = useState('');
 
     let { signInUser, verifyUser } = useContext(UserContext);
-    let naviage = useNavigate();
+    let navigate = useNavigate();
 
     useEffect(() => {
         async function fetch() {
@@ -25,7 +25,7 @@ const SignIn = () => {
         event.preventDefault();
         signInUser(username, password)
         .then(() => {
-            naviagent(`/displayprofile`);
+            navigate(`/displayprofile`);
             window.location.reload();
         })
         .catch((error) => {

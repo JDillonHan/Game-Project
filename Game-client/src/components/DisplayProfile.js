@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useContext, useId } from 'react';
 import { Link } from "react-router-dom";
-import { useParams, useNavagation } from 'react-router-dom';
-import UserContext from "../contexts/UserContext";
+import { useParams, useNavigation } from 'react-router-dom';
+import UserContext from "../contexts/userContext";
 import { Button, Col, Container, Row } from 'react-bootstrap';
-
+import { Pencil, Trash } from '@phosphor-icons/react';
 
 const DisplayProfile = () => {
     let { userId } = useParams();
-    let navigate = useNavagation();
+    let navigate = useNavigation();
     let { getUser, deleteUser, verifyUser } = useContext(UserContext);
     
     const [verify, setVerify] = useState(null);
@@ -32,7 +32,7 @@ const DisplayProfile = () => {
 
     function handleDeleteUser(event) {
         event.preventDefault();
-        deleteUser(user.userId),then(() => {
+        deleteUser(user.userId).then(() => {
             navigate('/');
             window.location.reload();
         });
