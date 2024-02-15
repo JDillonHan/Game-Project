@@ -1,7 +1,7 @@
 
 import React, { useState, useContext, useEffect } from 'react';
-import UserContext from '../contexts/UserContext';
-import { useNavigate } from 'reaect-router-dom';
+import UserContext from '../contexts/userContext';
+import { useNavigate } from 'react-router-dom';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 

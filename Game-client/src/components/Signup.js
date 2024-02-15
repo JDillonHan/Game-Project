@@ -1,8 +1,8 @@
 import React, { useContext, useState, useEffect } from "react";
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import UserContext from '../contexts/UserContext';
-import { Reactcomponent as SignUpPeople } from '../images/signUpPeople.svg';
+import UserContext from '../contexts/userContext';
+// import { Reactcomponent as SignUpPeople } from '../images/signUpPeople.svg';
 
 const SignUp = () => {
     const [verify, setVerify] = useState(null);
@@ -45,7 +45,7 @@ const SignUp = () => {
             <Container>
                 <Row className="cetner-align">
                     <Col md={6}>
-                        <SignUpPeople className="svg-auto-size" />
+                        {/* <SignUpPeople className="svg-auto-size" /> */}
                     </Col>
                     <Col md={6}>
                         <Form onSubmit={handleSubmit}>

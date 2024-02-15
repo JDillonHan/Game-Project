@@ -1,7 +1,7 @@
 import React from 'react';
-import { ReactComponent as GameLogo } from '../images/gameLogo.svg';
-import { ReactComponent as Facebook } from '../images/facebook.svg';
-import { ReactComponent as LinkedIn } from '../images/linkedIn.svg';
+// import { ReactComponent as GameLogo } from '../images/game.svg';
+// import { ReactComponent as Facebook } from '../images/facebook.svg';
+// import { ReactComponent as LinkedIn } from '../images/linkedIn.svg';
 import { Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
@@ -10,7 +10,7 @@ const Footer = () => {
     <div className="footer">
       <Row>
         <Col md={7}>
-          <GameLogo className="logo" />
+          {/* <GameLogo className="logo" /> */}
         </Col>
         <Col md={1}>
           <Link className="footer-links" to="/about">
@@ -33,10 +33,10 @@ const Footer = () => {
           <p className="footer-copyright">&copy; 2023 Bethel Tech, MannaSoft. All Rights Reserved</p>
         </Col>
         <Col md={1}>
-          <Facebook className="social-media-icons" />
+          {/* <Facebook className="social-media-icons" /> */}
         </Col>
         <Col md={1}>
-          <LinkedIn className="social-media-icons" />
+          {/* <LinkedIn className="social-media-icons" /> */}
         </Col>
       </Row>
     </div>
